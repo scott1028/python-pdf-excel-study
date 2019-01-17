@@ -31,6 +31,7 @@ worksheet.insert_image('B5', 'logo.jpg')
 # Set column format
 # format1 = workbook.add_format({'num_format': '#,##0.00'})
 # worksheet.set_column('A:B', 100, format1)
-# worksheet.set_column(0, 0, 100)  # Width of columns B:D set to 30.
+worksheet.set_column(0, 0, 8.38 * 2)  # Width of columns B:D set to 30.
+# 在工作表裡, 行高和列寬預設的計量單位都是預設好的, 預設的列寬是8.38 字元
 
 workbook.close()
