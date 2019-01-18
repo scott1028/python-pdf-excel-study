@@ -4,7 +4,13 @@ from jinja2 import Template
 
 font_config = FontConfiguration()
 
-t = Template('{% for item in items%}<div width="100" style="border: 1px solid coral;">{{ item }}</div>{% endfor %}')
+t = Template(
+'''{% for item in items%}
+    <div width="100" style="border: 1px solid coral;">
+      {{ item }}
+    </div>
+  {% endfor %}'''
+)
 
 output = '''
 <div>
